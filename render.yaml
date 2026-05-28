@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: classplus-auto-uploader
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: ADMIN_ID
+        sync: false
+      - key: DB_URL
+        sync: false
+      - key: DB_NAME
+        sync: false
+      - key: LOG_CHANNEL
+        sync: false
+      - key: USERLINK
+        sync: false
+      - key: TUTORIAL_VIDEO
+        sync: false
